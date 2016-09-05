@@ -75,6 +75,19 @@ class LinkedlistT{
 		
 	}
 }
+void swappairs(Node head){
+        Node curr=head;
+       
+       while(curr!=null && curr.next!=null){
+            
+            int k= curr.data;
+            curr.data=curr.next.data;
+            curr.next.data=k;
+            curr=curr.next.next;
+            
+        }
+	
+}
 	
 	void search(int loc){
 		
